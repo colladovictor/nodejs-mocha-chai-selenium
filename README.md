@@ -1,6 +1,6 @@
 nodejs-mocha-chai-selenium
 
-The approach of these samples is based on a clean Async/Await approach to await for a promise.
+The approach of these samples is based on a clean Async/Await approach to await for a promise. This approch is based on the newest implementation of the official selenium-webdriver(webdriverjs). 
 
 added package.json with:
 
