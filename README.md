@@ -1,5 +1,7 @@
 nodejs-mocha-chai-selenium
 
+The approach of these samples is based on a clean Async/Await approach to await for a promise.
+
 added package.json with:
 
 npm init
