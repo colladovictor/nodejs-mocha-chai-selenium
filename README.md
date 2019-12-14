@@ -15,14 +15,32 @@ https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-
 
 This is how I did the additions of my package.json;
 
-added:
+e.g. added:
 
- prod depencencies:
+" prod depencencies:
 
  npm i selenium webdriver --save-prod
  npm i mocha --save-prod
  npm i chai --save-prod
 
  dev dependencies:
+ 
+ npm i chai-as-promised "
 
- npm i chai-as-promised
+# Based of: WebDriverJs Demo from Alister Scott from "WatirMelon.com".
+
+## Pre-requisites
+
+#### Make sure you can use NVM, otherwise install your own version of Node for your system
+
+`nvm use`
+
+#### Install Dependencies
+
+`npm install`
+
+#### To run the specs
+
+`npm test`
+
+
