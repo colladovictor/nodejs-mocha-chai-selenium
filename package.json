@@ -4,21 +4,21 @@
   "description": "This package contains the nessesary tools to enable a friendly test env for selenium-webdriver, mocha & chai. Other dependencies will the added as nessesary.",
   "main": "index.js",
   "dependencies": {
-    "babel-core": "^6.3.13",
-    "babel-eslint": "^5.0.0-beta6",
-    "babel-preset-es2015": "^6.3.13",
+    "@babel/core": "^7.7.5",
+    "babel-eslint": "^10.0.3",
+    "@babel/preset-env": "^7.7.6",
     "chromedriver": "79.0.0",
     "config": "^1.16.0",
     "eslint": "^4.19.1",
     "lodash": "^4.17.15",
     "mocha": "^5.2.0",
     "mocha-parallel-tests": "^2.2.2",
-    "mocha-steps": "^1.1.0",
+    "mocha-steps": "^1.3.0",
     "selenium-webdriver": "^3.6.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "env SELENIUM_PROMISE_MANAGER=0 ./node_modules/.bin/mocha-parallel-tests --require babel-core/register --require mocha-steps ./src/specs",
+    "test": "env SELENIUM_PROMISE_MANAGER=0 ./node_modules/.bin/mocha-parallel-tests --require @babel/core/register --require mocha-steps ./src/specs",
     "bump-version": "npm version patch"
   },
   "repository": {
