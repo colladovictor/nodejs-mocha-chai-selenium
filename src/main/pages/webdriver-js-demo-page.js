@@ -1,6 +1,7 @@
 import webdriver from 'selenium-webdriver';
+process.env["NODE_CONFIG_DIR"] = __dirname + "./resources/config/";
 import config from 'config';
-import BasePage from './base-page.js';
+import BasePage from './../base/base-page';
 
 const by = webdriver.By;
 const until = webdriver.until;

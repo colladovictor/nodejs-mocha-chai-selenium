@@ -1,11 +1,12 @@
 import assert from 'assert';
 import webdriver from 'selenium-webdriver';
 import test from 'selenium-webdriver/testing';
+process.env["NODE_CONFIG_DIR"] = __dirname + "./resources/config";
 import config from 'config';
-import WebDriverJsDemoPage from '../lib/webdriver-js-demo-page';
-import WebDriverJsErrorPage from '../lib/webdriver-js-error-page';
-import WebDriverJsExpandPage from '../lib/webdriver-js-expand-page';
-import WebDriverJsLeavePage from '../lib/webdriver-js-leave-page';
+import WebDriverJsDemoPage from '../../src/main/pages/webdriver-js-demo-page';
+import WebDriverJsErrorPage from '../../src/main/pages/webdriver-js-error-page';
+import WebDriverJsExpandPage from '../../src/main/pages/webdriver-js-expand-page';
+import WebDriverJsLeavePage from '../../src/main/pages/webdriver-js-leave-page';
 
 let driver = null;
 

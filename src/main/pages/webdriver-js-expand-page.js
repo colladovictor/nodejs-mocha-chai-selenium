@@ -1,6 +1,7 @@
 import { By as by } from 'selenium-webdriver';
+process.env["NODE_CONFIG_DIR"] = __dirname + "./resources/config/";
 import config from 'config';
-import BasePage from './base-page.js';
+import BasePage from './../base/base-page';
 
 export default class WebDriverJsExpandPage extends BasePage {
 	constructor( driver, visit = false ) {
