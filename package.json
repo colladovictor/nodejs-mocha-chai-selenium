@@ -3,20 +3,6 @@
   "version": "1.0.0",
   "description": "This package contains the nessesary tools to enable a friendly test env for selenium-webdriver, mocha & chai. Other dependencies will the added as nessesary.",
   "main": "index.js",
-  "scripts": {
-    "test": "env SELENIUM_PROMISE_MANAGER=0 ./node_modules/.bin/mocha-parallel-tests --require babel-core/register --require mocha-steps specs",
-    "bump-version": "npm version patch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vonwiktor/nodejs-mocha-chai-selenium.git"
-  },
-  "author": "Victor Collado",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/vonwiktor/nodejs-mocha-chai-selenium/issues"
-  },
-  "homepage": "https://github.com/vonwiktor/nodejs-mocha-chai-selenium#readme",
   "dependencies": {
     "babel-core": "^6.3.13",
     "babel-eslint": "^5.0.0-beta6",
@@ -30,5 +16,19 @@
     "mocha-steps": "^1.1.0",
     "selenium-webdriver": "^3.6.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "test": "env SELENIUM_PROMISE_MANAGER=0 ./node_modules/.bin/mocha-parallel-tests --require babel-core/register --require mocha-steps ./src/specs",
+    "bump-version": "npm version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vonwiktor/nodejs-mocha-chai-selenium.git"
+  },
+  "author": "'Alister Scott'/Victor Collado",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/vonwiktor/nodejs-mocha-chai-selenium/issues"
+  },
+  "homepage": "https://github.com/vonwiktor/nodejs-mocha-chai-selenium#readme"
 }
